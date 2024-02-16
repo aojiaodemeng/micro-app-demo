@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <br />
+    <router-link to="/">基座： Go to Home</router-link>
+    <br />
+    <router-link to="/mypage1">基座： 去子应用1</router-link>
+    <br />
+    <router-link to="/mypage2">基座： 去子应用2</router-link>
+    <br />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>
